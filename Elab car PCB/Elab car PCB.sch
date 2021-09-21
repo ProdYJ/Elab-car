@@ -179,7 +179,7 @@ L Connector:Screw_Terminal_01x02 J2
 U 1 1 601035B4
 P 850 4250
 F 0 "J2" H 768 3925 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 768 4016 50  0000 C CNN
+F 1 "Power input" H 768 4016 50  0000 C CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 850 4250 50  0001 C CNN
 F 3 "~" H 850 4250 50  0001 C CNN
 F 4 "C8465" H 850 4250 50  0001 C CNN "LCSC #"
@@ -203,7 +203,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 4250 1150 4400
 Wire Wire Line
-	1050 4150 1400 4150
+	1050 4150 1200 4150
 Text GLabel 1950 3500 2    50   Input ~ 0
 mot_pwr
 Wire Wire Line
@@ -226,7 +226,7 @@ L Connector:Screw_Terminal_01x02 J3
 U 1 1 601173A2
 P 7050 1300
 F 0 "J3" H 7130 1292 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 7130 1201 50  0000 L CNN
+F 1 "L_Mot" H 7130 1201 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 1300 50  0001 C CNN
 F 3 "~" H 7050 1300 50  0001 C CNN
 F 4 "C8465" H 7050 1300 50  0001 C CNN "LCSC #"
@@ -239,7 +239,7 @@ L Connector:Screw_Terminal_01x02 J4
 U 1 1 60118878
 P 7050 2650
 F 0 "J4" H 7130 2642 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 7130 2551 50  0000 L CNN
+F 1 "R_Mot" H 7130 2551 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 7050 2650 50  0001 C CNN
 F 3 "~" H 7050 2650 50  0001 C CNN
 F 4 "C8465" H 7050 2650 50  0001 C CNN "LCSC #"
@@ -252,25 +252,25 @@ Wire Wire Line
 Wire Wire Line
 	5250 1550 5250 1300
 Wire Wire Line
-	5250 1300 6700 1300
+	5250 1300 5800 1300
 Wire Wire Line
 	5100 1750 5450 1750
 Wire Wire Line
 	5450 1750 5450 1400
 Wire Wire Line
-	5450 1400 6300 1400
+	5450 1400 5800 1400
 Wire Wire Line
 	5100 2350 5250 2350
 Wire Wire Line
 	5250 2350 5250 2750
 Wire Wire Line
-	5250 2750 6300 2750
+	5250 2750 5800 2750
 Wire Wire Line
 	5100 2150 5450 2150
 Wire Wire Line
 	5450 2150 5450 2650
 Wire Wire Line
-	5450 2650 6700 2650
+	5450 2650 5800 2650
 Wire Wire Line
 	6700 1550 6700 1300
 Connection ~ 6700 1300
@@ -738,7 +738,7 @@ L Connector_Generic:Conn_01x04 J5
 U 1 1 605C0BF1
 P 4400 4000
 F 0 "J5" H 4480 3992 50  0000 L CNN
-F 1 "Conn_01x04" H 4480 3901 50  0000 L CNN
+F 1 "HC-SR04" H 4480 3901 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4400 4000 50  0001 C CNN
 F 3 "~" H 4400 4000 50  0001 C CNN
 F 4 "C124413" H 4400 4000 50  0001 C CNN "LCSC #"
@@ -786,7 +786,7 @@ L Connector_Generic:Conn_01x03 J8
 U 1 1 605DBBCA
 P 5900 4100
 F 0 "J8" H 5980 4142 50  0000 L CNN
-F 1 "Conn_01x03" H 5980 4051 50  0000 L CNN
+F 1 "Servo" H 5980 4051 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5900 4100 50  0001 C CNN
 F 3 "~" H 5900 4100 50  0001 C CNN
 F 4 "C225500" H 5900 4100 50  0001 C CNN "LCSC #"
@@ -835,7 +835,7 @@ L Connector_Generic:Conn_01x04 J10
 U 1 1 605F522F
 P 7500 4050
 F 0 "J10" H 7580 4042 50  0000 L CNN
-F 1 "Conn_01x04" H 7580 3951 50  0000 L CNN
+F 1 "I2C" H 7580 3951 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7500 4050 50  0001 C CNN
 F 3 "~" H 7500 4050 50  0001 C CNN
 F 4 "C124413" H 7500 4050 50  0001 C CNN "LCSC #"
@@ -880,7 +880,7 @@ L Connector_Generic:Conn_01x03 J6
 U 1 1 60611EB8
 P 4450 5400
 F 0 "J6" H 4530 5442 50  0000 L CNN
-F 1 "Conn_01x03" H 4530 5351 50  0000 L CNN
+F 1 "R_Line" H 4530 5351 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4450 5400 50  0001 C CNN
 F 3 "~" H 4450 5400 50  0001 C CNN
 F 4 "C225500" H 4450 5400 50  0001 C CNN "LCSC #"
@@ -902,8 +902,6 @@ $EndComp
 Wire Wire Line
 	4050 5100 4050 5300
 Wire Wire Line
-	4050 5300 4250 5300
-Wire Wire Line
 	4050 5500 4050 5600
 Wire Wire Line
 	4050 5500 4250 5500
@@ -912,7 +910,7 @@ L Connector_Generic:Conn_01x03 J7
 U 1 1 606162C6
 P 5550 5400
 F 0 "J7" H 5630 5442 50  0000 L CNN
-F 1 "Conn_01x03" H 5630 5351 50  0000 L CNN
+F 1 "L_Line" H 5630 5351 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5550 5400 50  0001 C CNN
 F 3 "~" H 5550 5400 50  0001 C CNN
 F 4 "C225500" H 5550 5400 50  0001 C CNN "LCSC #"
@@ -970,7 +968,7 @@ L Connector_Generic:Conn_01x08 J9
 U 1 1 6062B86F
 P 7250 5350
 F 0 "J9" H 7330 5342 50  0000 L CNN
-F 1 "Conn_01x08" H 7330 5251 50  0000 L CNN
+F 1 "MPU5060" H 7330 5251 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7250 5350 50  0001 C CNN
 F 3 "~" H 7250 5350 50  0001 C CNN
 F 4 "C27438" H 7250 5350 50  0001 C CNN "LCSC #"
@@ -1053,7 +1051,7 @@ L Switch:SW_Push SW1
 U 1 1 606821BE
 P 8450 3150
 F 0 "SW1" H 8450 3435 50  0000 C CNN
-F 1 "SW_Push" H 8450 3344 50  0000 C CNN
+F 1 "Reset" H 8450 3344 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 8450 3350 50  0001 C CNN
 F 3 "~" H 8450 3350 50  0001 C CNN
 F 4 "C111373" H 8450 3150 50  0001 C CNN "LCSC #"
@@ -1124,7 +1122,7 @@ L Device:LED D15
 U 1 1 606A938B
 P 3900 6750
 F 0 "D15" H 3893 6495 50  0000 C CNN
-F 1 "Blue_led" H 3893 6586 50  0000 C CNN
+F 1 "LED_BUILTIN" H 3893 6586 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3900 6750 50  0001 C CNN
 F 3 "~" H 3900 6750 50  0001 C CNN
 F 4 "C72035" H 3900 6750 50  0001 C CNN "LCSC #"
@@ -1200,10 +1198,6 @@ Wire Wire Line
 	2500 2050 1500 2050
 Wire Wire Line
 	2500 2250 2250 2250
-Wire Wire Line
-	1300 1750 2050 1750
-Wire Wire Line
-	1300 1850 2050 1850
 NoConn ~ 2500 1550
 Text Label 10350 4850 0    50   ~ 0
 dist_sensor
@@ -1211,13 +1205,13 @@ Text Label 750  6750 2    50   ~ 0
 WS_sig
 Text Label 10350 5350 0    50   ~ 0
 WS_sig
-Text Label 5700 4100 2    50   ~ 0
+Text Label 5650 4100 2    50   ~ 0
 servo_sig
 Text Label 10350 3950 0    50   ~ 0
 servo_sig
-Text Label 4250 5400 2    50   ~ 0
+Text Label 4200 5400 2    50   ~ 0
 line_sens_1
-Text Label 5350 5400 2    50   ~ 0
+Text Label 5300 5400 2    50   ~ 0
 line_sens_2
 Text Label 10350 5250 0    50   ~ 0
 line_sens_1
@@ -1234,7 +1228,7 @@ L Switch:SW_Push SW2
 U 1 1 60715405
 P 4800 7000
 F 0 "SW2" H 4800 7285 50  0000 C CNN
-F 1 "SW_Push" H 4800 7194 50  0000 C CNN
+F 1 "User 1" H 4800 7194 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 4800 7200 50  0001 C CNN
 F 3 "~" H 4800 7200 50  0001 C CNN
 F 4 "C111373" H 4800 7000 50  0001 C CNN "LCSC #"
@@ -1295,7 +1289,7 @@ L Switch:SW_Push SW3
 U 1 1 60738732
 P 6050 7000
 F 0 "SW3" H 6050 7285 50  0000 C CNN
-F 1 "SW_Push" H 6050 7194 50  0000 C CNN
+F 1 "User 2" H 6050 7194 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 6050 7200 50  0001 C CNN
 F 3 "~" H 6050 7200 50  0001 C CNN
 F 4 "C111373" H 6050 7000 50  0001 C CNN "LCSC #"
@@ -1368,7 +1362,7 @@ $EndComp
 Text Label 4000 4050 2    50   ~ 0
 dist_sensor
 Wire Wire Line
-	4200 4000 4050 4000
+	4200 4000 4100 4000
 Wire Wire Line
 	4050 4000 4050 4050
 Wire Wire Line
@@ -1503,7 +1497,7 @@ $EndComp
 Wire Wire Line
 	3350 3800 3350 3750
 Wire Wire Line
-	2750 5050 3150 5050
+	2750 5050 2950 5050
 Connection ~ 2750 5050
 Wire Wire Line
 	3150 5350 3150 5400
@@ -1536,7 +1530,7 @@ L Connector:Screw_Terminal_01x02 J11
 U 1 1 606F5B77
 P 8850 6300
 F 0 "J11" H 8930 6292 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 8930 6201 50  0000 L CNN
+F 1 "SCL pullup" H 8930 6201 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8850 6300 50  0001 C CNN
 F 3 "~" H 8850 6300 50  0001 C CNN
 F 4 "C8465" H 8850 6300 50  0001 C CNN "LCSC #"
@@ -1549,7 +1543,7 @@ L Connector:Screw_Terminal_01x02 J12
 U 1 1 606FBE01
 P 10200 6300
 F 0 "J12" H 10280 6292 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 10280 6201 50  0000 L CNN
+F 1 "SDA pullup" H 10280 6201 50  0000 L CNN
 F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10200 6300 50  0001 C CNN
 F 3 "~" H 10200 6300 50  0001 C CNN
 F 4 "C8465" H 10200 6300 50  0001 C CNN "LCSC #"
@@ -1750,7 +1744,7 @@ Wire Wire Line
 	10400 1300 10400 1200
 Connection ~ 10400 1200
 Wire Wire Line
-	10600 850  10800 850 
+	10600 850  10700 850 
 Wire Wire Line
 	10800 850  10800 1000
 Text Label 10800 850  0    50   ~ 0
@@ -1758,7 +1752,7 @@ esp_SDA
 Text Label 10000 650  0    50   ~ 0
 SDA
 Wire Wire Line
-	10000 650  10000 850 
+	10000 650  10000 800 
 Wire Wire Line
 	10000 850  10200 850 
 $Comp
@@ -1795,7 +1789,7 @@ Wire Wire Line
 	10450 2200 10450 2100
 Connection ~ 10450 2100
 Wire Wire Line
-	10650 1750 10850 1750
+	10650 1750 10700 1750
 Wire Wire Line
 	10850 1750 10850 1900
 Text Label 10850 1750 0    50   ~ 0
@@ -1803,7 +1797,7 @@ esp_SCL
 Text Label 10050 1550 0    50   ~ 0
 SCL
 Wire Wire Line
-	10050 1550 10050 1750
+	10050 1550 10050 1700
 Wire Wire Line
 	10050 1750 10250 1750
 $Comp
@@ -1851,7 +1845,7 @@ Wire Wire Line
 	8800 3400 8800 3150
 Connection ~ 8800 3150
 Wire Wire Line
-	8800 3150 8950 3150
+	8800 3150 8850 3150
 $Comp
 L power:GND #PWR053
 U 1 1 606F2001
@@ -1877,18 +1871,6 @@ Wire Wire Line
 	1750 6400 1750 6450
 Wire Wire Line
 	1050 6400 1050 6450
-$Comp
-L power:PWR_FLAG #FLG0101
-U 1 1 608FBA9E
-P 8650 6300
-F 0 "#FLG0101" H 8650 6375 50  0001 C CNN
-F 1 "PWR_FLAG" H 8650 6473 50  0000 C CNN
-F 2 "" H 8650 6300 50  0001 C CNN
-F 3 "~" H 8650 6300 50  0001 C CNN
-	1    8650 6300
-	1    0    0    -1  
-$EndComp
-Connection ~ 8650 6300
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 608FCA04
@@ -1976,7 +1958,7 @@ L Device:D_Schottky D4
 U 1 1 60984D20
 P 6300 1700
 F 0 "D4" V 6254 1780 50  0000 L CNN
-F 1 "D_Schottky" V 6345 1780 50  0000 L CNN
+F 1 "Flyback" V 6345 1780 50  0000 L CNN
 F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6300 1700 50  0001 C CNN
 F 3 "~" H 6300 1700 50  0001 C CNN
 F 4 "C189958" H 6300 1700 50  0001 C CNN "LCSC #"
@@ -1989,7 +1971,7 @@ L Device:D_Schottky D8
 U 1 1 6098D92E
 P 6700 1700
 F 0 "D8" V 6654 1780 50  0000 L CNN
-F 1 "D_Schottky" V 6745 1780 50  0000 L CNN
+F 1 "Flyback" V 6745 1780 50  0000 L CNN
 F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6700 1700 50  0001 C CNN
 F 3 "~" H 6700 1700 50  0001 C CNN
 F 4 "C189958" H 6700 1700 50  0001 C CNN "LCSC #"
@@ -2005,7 +1987,7 @@ L Device:D_Schottky D3
 U 1 1 609A01F1
 P 6300 850
 F 0 "D3" V 6254 930 50  0000 L CNN
-F 1 "D_Schottky" V 6345 930 50  0000 L CNN
+F 1 "Flyback" V 6345 930 50  0000 L CNN
 F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6300 850 50  0001 C CNN
 F 3 "~" H 6300 850 50  0001 C CNN
 F 4 "C189958" H 6300 850 50  0001 C CNN "LCSC #"
@@ -2018,7 +2000,7 @@ L Device:D_Schottky D7
 U 1 1 609A01F7
 P 6700 850
 F 0 "D7" V 6654 930 50  0000 L CNN
-F 1 "D_Schottky" V 6745 930 50  0000 L CNN
+F 1 "Flyback" V 6745 930 50  0000 L CNN
 F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6700 850 50  0001 C CNN
 F 3 "~" H 6700 850 50  0001 C CNN
 F 4 "C189958" H 6700 850 50  0001 C CNN "LCSC #"
@@ -2031,7 +2013,7 @@ L Device:D_Schottky D6
 U 1 1 609B9FBC
 P 6300 2950
 F 0 "D6" V 6254 3030 50  0000 L CNN
-F 1 "D_Schottky" V 6345 3030 50  0000 L CNN
+F 1 "Flyback" V 6345 3030 50  0000 L CNN
 F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6300 2950 50  0001 C CNN
 F 3 "~" H 6300 2950 50  0001 C CNN
 F 4 "C189958" H 6300 2950 50  0001 C CNN "LCSC #"
@@ -2044,7 +2026,7 @@ L Device:D_Schottky D10
 U 1 1 609B9FC2
 P 6700 2950
 F 0 "D10" V 6654 3030 50  0000 L CNN
-F 1 "D_Schottky" V 6745 3030 50  0000 L CNN
+F 1 "Flyback" V 6745 3030 50  0000 L CNN
 F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6700 2950 50  0001 C CNN
 F 3 "~" H 6700 2950 50  0001 C CNN
 F 4 "C189958" H 6700 2950 50  0001 C CNN "LCSC #"
@@ -2057,7 +2039,7 @@ L Device:D_Schottky D5
 U 1 1 609C3073
 P 6300 2400
 F 0 "D5" V 6254 2480 50  0000 L CNN
-F 1 "D_Schottky" V 6345 2480 50  0000 L CNN
+F 1 "Flyback" V 6345 2480 50  0000 L CNN
 F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6300 2400 50  0001 C CNN
 F 3 "~" H 6300 2400 50  0001 C CNN
 F 4 "C189958" H 6300 2400 50  0001 C CNN "LCSC #"
@@ -2070,7 +2052,7 @@ L Device:D_Schottky D9
 U 1 1 609C3079
 P 6700 2400
 F 0 "D9" V 6654 2480 50  0000 L CNN
-F 1 "D_Schottky" V 6745 2480 50  0000 L CNN
+F 1 "Flyback" V 6745 2480 50  0000 L CNN
 F 2 "Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6700 2400 50  0001 C CNN
 F 3 "~" H 6700 2400 50  0001 C CNN
 F 4 "C189958" H 6700 2400 50  0001 C CNN "LCSC #"
@@ -2111,7 +2093,7 @@ L Device:Crystal_GND24 Y1
 U 1 1 61578804
 P 1850 2600
 F 0 "Y1" H 2044 2646 50  0000 L CNN
-F 1 "Crystal_GND24" H 2044 2555 50  0000 L CNN
+F 1 "12MHz" H 2044 2555 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 1850 2600 50  0001 C CNN
 F 3 "~" H 1850 2600 50  0001 C CNN
 	1    1850 2600
@@ -2165,4 +2147,332 @@ Wire Wire Line
 	2050 1850 2500 1850
 Text Label 2050 1950 0    50   ~ 0
 D-
+$Comp
+L Connector:TestPoint TP3
+U 1 1 6150EA73
+P 1550 1850
+F 0 "TP3" H 1608 1968 50  0000 L CNN
+F 1 "TestPoint" H 1608 1877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1750 1850 50  0001 C CNN
+F 3 "~" H 1750 1850 50  0001 C CNN
+	1    1550 1850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1300 1750 1550 1750
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6151BC6F
+P 1550 1750
+F 0 "TP2" H 1608 1868 50  0000 L CNN
+F 1 "TestPoint" H 1608 1777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1750 1750 50  0001 C CNN
+F 3 "~" H 1750 1750 50  0001 C CNN
+	1    1550 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1550 1850
+Wire Wire Line
+	1550 1850 2050 1850
+Wire Wire Line
+	1300 1850 1550 1850
+Connection ~ 1550 1750
+Wire Wire Line
+	1550 1750 2050 1750
+$Comp
+L Connector:TestPoint TP11
+U 1 1 6154EA5A
+P 5800 1300
+F 0 "TP11" H 5858 1418 50  0000 L CNN
+F 1 "TestPoint" H 5858 1327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 6000 1300 50  0001 C CNN
+F 3 "~" H 6000 1300 50  0001 C CNN
+	1    5800 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP13
+U 1 1 615591A1
+P 5800 2650
+F 0 "TP13" H 5858 2768 50  0000 L CNN
+F 1 "TestPoint" H 5858 2677 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 6000 2650 50  0001 C CNN
+F 3 "~" H 6000 2650 50  0001 C CNN
+	1    5800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP14
+U 1 1 615638DB
+P 5800 2750
+F 0 "TP14" H 5858 2868 50  0000 L CNN
+F 1 "TestPoint" H 5858 2777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 6000 2750 50  0001 C CNN
+F 3 "~" H 6000 2750 50  0001 C CNN
+	1    5800 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 6156DF0A
+P 5800 1400
+F 0 "TP12" H 5858 1518 50  0000 L CNN
+F 1 "TestPoint" H 5858 1427 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 6000 1400 50  0001 C CNN
+F 3 "~" H 6000 1400 50  0001 C CNN
+	1    5800 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP16
+U 1 1 615786E7
+P 8500 750
+F 0 "TP16" H 8558 868 50  0000 L CNN
+F 1 "TestPoint" H 8558 777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 8700 750 50  0001 C CNN
+F 3 "~" H 8700 750 50  0001 C CNN
+	1    8500 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP17
+U 1 1 6158320C
+P 8500 2050
+F 0 "TP17" H 8558 2168 50  0000 L CNN
+F 1 "TestPoint" H 8558 2077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 8700 2050 50  0001 C CNN
+F 3 "~" H 8700 2050 50  0001 C CNN
+	1    8500 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP19
+U 1 1 6158DE3D
+P 10000 800
+F 0 "TP19" H 10058 918 50  0000 L CNN
+F 1 "TestPoint" H 10058 827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 10200 800 50  0001 C CNN
+F 3 "~" H 10200 800 50  0001 C CNN
+	1    10000 800 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP20
+U 1 1 615985C0
+P 10050 1700
+F 0 "TP20" H 10108 1818 50  0000 L CNN
+F 1 "TestPoint" H 10108 1727 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 10250 1700 50  0001 C CNN
+F 3 "~" H 10250 1700 50  0001 C CNN
+	1    10050 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP22
+U 1 1 615A2E09
+P 10700 1750
+F 0 "TP22" H 10758 1868 50  0000 L CNN
+F 1 "TestPoint" H 10758 1777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 10900 1750 50  0001 C CNN
+F 3 "~" H 10900 1750 50  0001 C CNN
+	1    10700 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP21
+U 1 1 615AD2CC
+P 10700 850
+F 0 "TP21" H 10758 968 50  0000 L CNN
+F 1 "TestPoint" H 10758 877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 10900 850 50  0001 C CNN
+F 3 "~" H 10900 850 50  0001 C CNN
+	1    10700 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP18
+U 1 1 615B7773
+P 8850 3150
+F 0 "TP18" H 8908 3268 50  0000 L CNN
+F 1 "TestPoint" H 8908 3177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 9050 3150 50  0001 C CNN
+F 3 "~" H 9050 3150 50  0001 C CNN
+	1    8850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 615C1B30
+P 1200 4150
+F 0 "TP1" H 1258 4268 50  0000 L CNN
+F 1 "TestPoint" H 1258 4177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 1400 4150 50  0001 C CNN
+F 3 "~" H 1400 4150 50  0001 C CNN
+	1    1200 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 615CBE4D
+P 3350 3750
+F 0 "TP5" H 3408 3868 50  0000 L CNN
+F 1 "TestPoint" H 3408 3777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3550 3750 50  0001 C CNN
+F 3 "~" H 3550 3750 50  0001 C CNN
+	1    3350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 615D61B1
+P 2950 5050
+F 0 "TP4" H 3008 5168 50  0000 L CNN
+F 1 "TestPoint" H 3008 5077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 3150 5050 50  0001 C CNN
+F 3 "~" H 3150 5050 50  0001 C CNN
+	1    2950 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 615E06DD
+P 4100 4000
+F 0 "TP6" H 4158 4118 50  0000 L CNN
+F 1 "TestPoint" H 4158 4027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 4300 4000 50  0001 C CNN
+F 3 "~" H 4300 4000 50  0001 C CNN
+	1    4100 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP15
+U 1 1 61609889
+P 6350 7000
+F 0 "TP15" H 6408 7118 50  0000 L CNN
+F 1 "TestPoint" H 6408 7027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 6550 7000 50  0001 C CNN
+F 3 "~" H 6550 7000 50  0001 C CNN
+	1    6350 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 61613C87
+P 5100 7000
+F 0 "TP8" H 5158 7118 50  0000 L CNN
+F 1 "TestPoint" H 5158 7027 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 5300 7000 50  0001 C CNN
+F 3 "~" H 5300 7000 50  0001 C CNN
+	1    5100 7000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 4150
+Wire Wire Line
+	1200 4150 1400 4150
+Connection ~ 3350 3750
+Connection ~ 4100 4000
+Wire Wire Line
+	4100 4000 4050 4000
+Wire Wire Line
+	5650 4100 5700 4100
+$Comp
+L Connector:TestPoint TP10
+U 1 1 616977C4
+P 5650 3900
+F 0 "TP10" H 5708 4018 50  0000 L CNN
+F 1 "TestPoint" H 5708 3927 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 5850 3900 50  0001 C CNN
+F 3 "~" H 5850 3900 50  0001 C CNN
+	1    5650 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 3900 5650 4100
+Connection ~ 5800 1300
+Wire Wire Line
+	5800 1300 6700 1300
+Connection ~ 5800 1400
+Wire Wire Line
+	5800 1400 6300 1400
+Connection ~ 5800 2650
+Wire Wire Line
+	5800 2650 6700 2650
+Connection ~ 5800 2750
+Wire Wire Line
+	5800 2750 6300 2750
+Connection ~ 8500 750 
+Connection ~ 8500 2050
+Connection ~ 10000 800 
+Wire Wire Line
+	10000 800  10000 850 
+Connection ~ 10700 850 
+Wire Wire Line
+	10700 850  10800 850 
+Connection ~ 10050 1700
+Wire Wire Line
+	10050 1700 10050 1750
+Connection ~ 10700 1750
+Wire Wire Line
+	10700 1750 10850 1750
+Connection ~ 8850 3150
+Wire Wire Line
+	8850 3150 8950 3150
+Wire Wire Line
+	4050 5300 4250 5300
+Wire Wire Line
+	5350 5400 5300 5400
+Wire Wire Line
+	4250 5400 4200 5400
+$Comp
+L Connector:TestPoint TP7
+U 1 1 617BD347
+P 4200 5200
+F 0 "TP7" H 4258 5318 50  0000 L CNN
+F 1 "TestPoint" H 4258 5227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 4400 5200 50  0001 C CNN
+F 3 "~" H 4400 5200 50  0001 C CNN
+	1    4200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 617BEBBF
+P 5300 5200
+F 0 "TP9" H 5358 5318 50  0000 L CNN
+F 1 "TestPoint" H 5358 5227 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.5mm" H 5500 5200 50  0001 C CNN
+F 3 "~" H 5500 5200 50  0001 C CNN
+	1    5300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 5200 5300 5400
+Wire Wire Line
+	4200 5200 4200 5400
+Connection ~ 2950 5050
+Wire Wire Line
+	2950 5050 3150 5050
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 608FBA9E
+P 8650 6300
+F 0 "#FLG0101" H 8650 6375 50  0001 C CNN
+F 1 "PWR_FLAG" H 8650 6473 50  0000 C CNN
+F 2 "" H 8650 6300 50  0001 C CNN
+F 3 "~" H 8650 6300 50  0001 C CNN
+	1    8650 6300
+	1    0    0    -1  
+$EndComp
+Connection ~ 8650 6300
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 61830A17
+P 750 6750
+F 0 "#FLG0104" H 750 6825 50  0001 C CNN
+F 1 "PWR_FLAG" H 750 6923 50  0000 C CNN
+F 2 "" H 750 6750 50  0001 C CNN
+F 3 "~" H 750 6750 50  0001 C CNN
+	1    750  6750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
