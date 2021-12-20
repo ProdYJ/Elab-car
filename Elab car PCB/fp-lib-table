@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name electroLABOT_switch)(type KiCad)(uri ${KIPRJMOD}/electroLABOT_switch.pretty)(options "")(descr ""))
+)
